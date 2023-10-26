@@ -12,15 +12,7 @@ const Navbar_endereco = ({endereco}) =>{
     } else {
         return null;
     }
-    // return(
-    //     <div>
-    //         <p>CEP: {cep}</p>
-    //         <p>BAIRRO: {bairro}</p>
-    //         <p>CIDADE: {cidade}</p>
-    //         <p>CEP: {rua}</p>
-    //         <p>HORARIO: {horario}</p>
-    //     </div>
-    // );
+  
 }
 
 export default Navbar_endereco

@@ -5,9 +5,9 @@ import Navbar_endereco from '../navbar_components/Navbar_endereco'
 
 const Navbar_menu = () => {
     const [endereco, setEndereco] = useState(null);
-    const [cep, setCep] = useState('95590000');
+    const [cep] = useState('95560000');
     const [mostrarEndereco, setMostrarEndereco] = useState(false);
-
+//93037596
     const handleClick = async () => {
         try {
             const response = await fetch(`http://viacep.com.br/ws/${cep}/json/`);
@@ -24,7 +24,7 @@ const Navbar_menu = () => {
             <button onClick={handleClick}>LOCALIZAÇÃO</button>
                 {mostrarEndereco && (
                 <>
-                    <Navbar_endereco endereco={endereco} />  
+                  <Navbar_endereco endereco={endereco} />  
                 </>
             )}
         </div>
